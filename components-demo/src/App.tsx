@@ -14,6 +14,7 @@ const App = () => {
             }
             emptyArray.push(randomNumber);
         }
+        emptyArray.sort((a, b) => a - b);
         setNumbers(emptyArray);
     };
     return (
