@@ -7,10 +7,13 @@ const App = () => {
     const changeNumbers = () => {
         const emptyArray:number[] = [];
         console.log(emptyArray);
-        for (let i = 0; i <= 4; i++) {
-            const randomNumber= Math.floor(Math.random() * (36 - 5 + 1)) + 5 ;
-            // if (randomNumber === 4) {}
-            emptyArray.push(randomNumber);        }
+        for (let i = 0; i < 5; i++) {
+            let randomNumber = Math.floor(Math.random() * (36 - 5 + 1)) + 5;
+            while (emptyArray.includes(randomNumber)) {
+                randomNumber = Math.floor(Math.random() * (36 - 5 + 1)) + 5;
+            }
+            emptyArray.push(randomNumber);
+        }
         setNumbers(emptyArray);
     };
     return (
