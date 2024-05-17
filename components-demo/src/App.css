@@ -5,11 +5,39 @@
   text-align: center;
 }
 
+.changeBtn {
+  box-shadow: 0 5px 15px 0 rgba(11, 99, 246, 1);
+  transition: 0.5s;
+  margin-bottom: 80px;
+  font-size: 40px;
+  background-image: url("../images/space.png");
+}
+
+.changeBtn:hover {
+  transform: translate(0,-3px);
+  box-shadow: 0 20px 40px 0 rgba(11, 99, 246, 1);
+}
+
+.main-circle {
+  display: flex;
+  justify-content: center;
+}
+
 .my-circle {
-  width: 20%;
-  height: 20%;
+  width: 100px;
+  height: 100px;
   padding: 20px;
   border-radius: 50%;
-  border: 3px solid #213547;
-  background-color: #abc5e7;
+  box-shadow: 0 5px 15px 0 rgba(11, 99, 246, 1);
+  text-align: center;
+  margin: 20px;
+  background-image: url("../images/moon.png");
+  background-position: center;
+  background-size: contain;
+}
+
+h1 {
+  margin: 0;
+  padding: 20px;
+  color: #c59f58;
 }

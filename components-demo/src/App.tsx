@@ -19,12 +19,16 @@ const App = () => {
     };
     return (
         <>
-            <button onClick={changeNumbers}>New number</button>
+            <button onClick={changeNumbers} className="changeBtn">New number</button>
+            <div className="main-circle">
             {numbers.map((lot, index)=> {
                 return (
-                    <Number cercle={lot} key={index} />
-                )
+                    <div className="main-circle ">
+                        <Number circle={lot} key={index}/>
+                    </div>
+                );
             })}
+            </div>
         </>
     );
 };

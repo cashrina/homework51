@@ -2,15 +2,13 @@ import React from 'react';
 import "./Number.css"
 
 interface Props {
-    cercle:number;
+    circle: number;
 }
-const Number: React.FC<Props> = ({cercle}) => {
+const Number: React.FC<Props> = ({circle}) => {
     return (
-        <div>
             <div className="my-circle">
-                <h1>{cercle}</h1>
+                <h1>{circle}</h1>
             </div>
-        </div>
     );
 };
 
