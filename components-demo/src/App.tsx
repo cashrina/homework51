@@ -6,7 +6,6 @@ const App = () => {
     const [numbers, setNumbers] = useState<number[]>([5, 11, 16, 23, 32]);
     const changeNumbers = () => {
         const emptyArray:number[] = [];
-        console.log(emptyArray);
         for (let i = 0; i < 5; i++) {
             let randomNumber = Math.floor(Math.random() * (36 - 5 + 1)) + 5;
             while (emptyArray.includes(randomNumber)) {
